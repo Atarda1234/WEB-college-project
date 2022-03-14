@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CSS-mainPage.css">
+    <link rel="stylesheet" href="css/CSSproject.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery == "undefined") {
+            alert("not working");
+        }
+        </script>
+
+    <title>Main Page</title>
+</head>
+<body  >
+  <header id="header"> </header>
+
+  <div style="text-shadow: 3px 3px 5px white;">
+    <h3 class="center"> Hello Eden</h3>
+    <hr style="border-width: thick ; width: 75%;"> 
+    <h4 style="text-align: center"; class="textShadow"> <u> Remainders: </u> </h4>
+    <ul class="ul" id="center">
+      <li><span class="glyphicon glyphicon-time"></span>&nbsp; <b>  Your exercize today is aerobic training </b> </li><br>
+      <li><span class="glyphicon glyphicon-time"></span>&nbsp; <b> Drink at list 3 liters of water </b> </li><br>
+      <li><span class="glyphicon glyphicon-time"></span>&nbsp; <b> Computing lunch at 3 p.m. </b> </li><br>
+    </ul>
+  
+    <hr style="border-width: medium ; width: 75%;">
+    <h4 class="textShadow" style="text-align: center;"> <u> My Data: </u> </h4>
+    
+    <table class="myTable" style="width:60%">
+         <tr>
+            <td> <b>Current weight:</b><br> 92kg </td>
+            <td> <b>Weekly average:</b><br> 2.3kg</td>
+        </tr>
+            <tr><td><br></td></tr>
+          <tr>
+              <td><b>So far you have lost:</b><br> 6.7kg </td>
+              <td> <b>Fat percentage:</b><br> 30.2%</td>
+        </tr>
+        
+    </table>
+     <br> <br>
+
+     <ul class="ul" id="center">
+         <li class=li><a href="includes/Menu.html" > <img  class="pic2" src="photos/menuNew.png" alt="error1"> <p style="color: black"> My Menu</p></a>  </li>
+         <li class=li> <a href="includes/prjForm.html" > <img class="pic2" src="photos/weightNew.png" alt="error1"> <p style="color: black">Enter Weight</p> </a></li> <br>
+         <li class=li><a href="#" title="Not Valid" > <img style="width:45%;" src="photos/weightsNew.png" alt="error1"> <br> <p style="color: black"> My Exercize</p></a></li>
+     </ul>
+    </div>
+    <br> <br> <br>
+    <div class="slogan">
+      <h1 id="slogan" class="textShadow">Continue to the <br> weekly menus</h1> 
+      <img id="arrow" src="https://pixsector.com/cache/0688783e/avbf566659ab2bdf82f87.png" alt="error">
+      <br> <br> 
+      <div class="col-12">
+        <a href="includes/WeeklyMeal.html"> <img style="height: 200px; padding: 15px;" src="https://www.freeiconspng.com/thumbs/salad-png/salad-png-image-3.png" alt="error"> </a>
+        <a href="includes/WeeklyMeal.html"> <img style="height: 200px; padding: 15px;" src="https://cdn.picpng.com/cookie/cookie-view-26859.png" alt="error"> </a>
+      </div>
+   </div>
+    <i class="fas fa-clock"></i>
+
+    
+    <footer id="foot"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
+<script>
+ $(document).ready(
+            function(){
+              $("#header").load("includes/navbar.html");
+              $("#foot").load("includes/footer.html");
+            }
+ )
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+
+.myTable {
+width: 40%;
+text-align: center;
+font-size: 12px;
+border-collapse:collapse ;
+margin: auto;
+box-sizing: border-box;
+font-size: 110%;
+}
+
+.div {
+text-align: center;
+box-sizing: border-box;
+width: 60%;
+border-collapse: separate;
+margin: auto;
+float: left;
+}
+
+.pic{
+display: inline-block;
+height: 20%;
+width: 20%;
+box-sizing: border-box;
+margin: 5px;
+}
+
+.pic2 {
+height: 40%;
+width: 40%;
+}
+
+.ul {list-style-type: none; margin:auto; width: 50%;}
+
+.li{float: left; width: 30%; margin-left: 2%;
+}
+
+.myimage {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.CenterIm {
+    
+    position: fixed;
+    background-color: blue;
+    top: 15%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px; }
+
+
+#slogan{
+    color:palevioletred
+}
+
+.slogan{
+    margin: auto;
+    text-align: center;
+    clear: both;
+}
+
+#arrow{
+    width:15%;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+
+

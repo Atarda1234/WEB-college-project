@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/CSSproject.css">
+    <link rel="stylesheet" href="../css/prjForm.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery == "undefined") {
+            alert("not working");
+        }
+    </script>
+
+    <title>form</title>
+</head>
+
+<body>
+    <header id="header"></header>
+    <br><br><br>
+
+    <main>
+        <h1 id="center"> Hello Eden</h1>
+        <h3 id="date" class="center"> </h3>
+        <h4 class="left">Plaese Fill Your Daily Details: </h4>
+        <form class="left" action="projectPHP.php" method="post">
+            <label class="lbl"><b> What's your weight for today: </b> &nbsp; <input class="input " name="weight" type="number" min="30"
+                    value="00.0" step="any" />
+                <b> KG </b>  </label><br>
+            <label class="lbl"> <b>What's your fat percentage for today: </b> &nbsp; <input class="input" name="fatP" type="number"
+                    min="0" step="any" />
+                <b> % </b> </label> <br>
+                <label class="lbl"> <b>Did you had a workout today: </b> &nbsp;
+  
+            <div>
+                Yes <input id="yes" type="radio" name="TrainingStatus">
+                No <input id="no" type="radio" name="TrainingStatus">
+                </label>
+            </div>
+            <br>
+            <div id="training">
+                <label class="lbl"> <b> Type of training: </b> </label> <br> 
+                Aerobic <input type="checkbox"  name="aerobic"> &nbsp;
+                Strength <input type="checkbox"  name="strength"> &nbsp;
+                Stretching <input type="checkbox"  name="stretching"> &nbsp;   <br>
+
+                      
+                <label class="lbl"> <b> Number of calories you burned: </b>  &nbsp; <input class="input" name="calories" type="number" min="0"
+                    value="100"> </label>   
+            </div>
+            <label class="lbl"> <input type="submit" name="update" value="Send"> </label>
+        </form>
+
+    </main>
+
+
+    <footer id="foot"></footer>
+    <script>
+        $(document).ready(
+            function () {
+                $("#header").load("navbar2.html");
+                $("#foot").load("footer.html");
+                $("#training").hide();
+                $("#yes").click(
+                    function () {
+                        $("#training").show();
+                    }
+                )
+                $("#no").click(
+                    function () {
+                        $("#training").hide();
+                    }
+                )
+            }
+
+        )
+
+    </script>
+    <script>
+
+        // שעון 
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = "Today is The " + m + "/" + d + "/" + y;
+
+        // הפעלת המשך מילוי טופס
+        function show() {
+            document.getElementById("#lbl").style.display = "block";
+        }
+
+        // הסתרת טופס 
+        function hide() {
+            document.getElementById("#lbl").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
+

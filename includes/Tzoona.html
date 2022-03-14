@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/CSS-Tzoona.css">
+    <link rel="stylesheet" href="../css/CSSproject.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery == "undefined") {
+            alert("not working");
+        }
+        </script>
+
+    <title>Tzoona Area</title>
+</head>
+<body>
+    <header id="header"> </header>
+
+        <main class="main">
+                <div class="div1">
+                    <button class="buttom" title="Not Valid"> <b> My Nutrition Diary </b> </button> <br>
+                    <button onclick="location.href='Menu.html'" class="buttom"> <b> My Menus </b> </button> <br>
+                    <button class="buttom" title="Not Valid" > <b> Progress and Goals </b> </button> <br>
+                    <button onclick="location.href='WeeklyMeal.html'" class="buttom"> <b> The Weekly Recommendation </b> </button> <br>
+               
+                </div>
+        </main>
+
+        <aside>
+          <button class="open-button" onclick="openForm()">Chat</button>
+
+          <div class="chat-popup" id="myForm">
+            <form action=# class="form-container">
+              <h1>Chat</h1>
+          
+              <label for="msg"><b>Message</b></label>
+              <textarea placeholder="Type message.." name="msg" required></textarea>
+          
+            
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          
+          <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+        </aside>
+       
+        <footer id="foot">  </footer>
+   
+      
+
+      <script>
+        $(document).ready(
+                   function(){
+                     $("#header").load("navbar2.html");
+                     $("#foot").load("footer.html");
+                   }
+        )
+       </script>
+</body>
+</html>

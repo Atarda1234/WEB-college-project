@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/WeeklyMealCSS.css">
+    <link rel="stylesheet" href="../css/CSSproject.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Weekly meal</title>
+</head>
+<body>
+    <header id="header">  </header>
+        <br> <br> <br>
+        <main>
+          <h1 class = "p"> Ceaser salad </h1>
+          <p class="p">Ever wanted to discover the perfect Caesar salad recipe?
+            <br> Here is a recipe for a Caesar salad that is easy to prepare and the most delicious you can make or taste:
+            <br> fresh and fresh lettuce leaves with garlic, mayonnaise, Worcestershire sauce, large and pampering croutons and lots of Grana Padano cheese (or Parmesan).
+            <br> calories: 439  per serving, 112 calories per 100 grams.</p>
+            <div class="center" > 
+                <button id="button" onclick="playPause()">Play/Pause</button> 
+                <button id="button" onclick="makeBig()">Big</button>
+                <button id="button" onclick="makeSmall()">Small</button>
+                <button id="button" onclick="makeNormal()">Normal</button>
+                <br><br>
+                <video id="video1" width="420" controls>
+                  <source src="../videos/saladVideo.mp4" type="video/mp4">
+                  <!-- ?ogg מה זה -->
+                  <source src="../videos/saladVideo.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+                </video>
+                <p>To watch on YouTube: <a href="https://www.youtube.com/watch?v=HrAtOXo6fuw" target="_blank">Ceaser salad</a>.</p>
+               
+               
+            </div>
+            <h3 class = "p">How to prepare the recipe:</h3>
+            <p class = "p">
+              1. Tear the lettuce into coarse pieces by hand and place in a deep bowl.<br>
+              2. Mix all the sauce ingredients well and pour over the lettuce in a bowl.<br>
+              3. Add over the croutons and Grana Padano cheese chips.<br>
+              4.Serve immediately Caesar salad is easy to prepare, special and delicious not to be missed.<br>
+              5.Appetite (:
+            </p>
+            <br> <br>
+            <h1 class = "p"> Orange lentil soup </h1>
+            <p class = "p">
+              Delicious winter soup with orange lentils and vegetables.<br>
+              a soup that is worth adopting during the winter because it is easy to prepare, nourishes and warms the throat and heart.<br>
+              calories: 145  per serving, 38 calories per 100 grams.
+            </p>
+            <div class="center">
+                <button id="button" onclick="playPause()">Play/Pause</button> 
+                <button id="button" onclick="makeBig()">Big</button>
+                <button id="button" onclick="makeSmall()">Small</button>
+                <button id="button" onclick="makeNormal()">Normal</button>
+                <br><br>
+                <video id="video1" width="420" controls>
+                  <source src="../videos/soupVideo.mp4" type="video/mp4">
+                  <source src="../videos/soupVideo.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+                </video>
+                <p>To watch on YouTube: <a href="https://www.youtube.com/watch?v=TYjU6XW0nTI" target="_blank">Orange lentil soup</a>.</p>
+
+              </div> 
+              <h3 class = "p">How to prepare the recipe:</h3>
+              <p class = "p">
+                1. Cut the carrots, potatoes, onions and sweet potatoes into small cubes and fry them in oil for a few minutes.<br>
+                2. Add the boiling water and cook the vegetables for about 15 minutes.<br>
+                3. Add the orange lentils, chopped parsley and spices, mix and cook covered for about 15 minutes until the vegetables and lentils soften.<br>
+                4. When the soup cools down a bit, grind it in a rod blender (you can set aside some of the chopped vegetables that are not ground and add to the soup after grinding).<br>
+                5.Serve with soup almonds or croutons.<br>
+                6. Appetite (:
+              </p>
+        </main>
+
+        <script src="../js/WeeklyMealJS.js"> </script> 
+
+          <footer id="foot"> </footer>
+     
+     
+      <script>
+        $(document).ready(
+                   function(){
+                     $("#header").load("navbar2.html");
+                     $("#foot").load("footer.html");
+                   }
+        )
+       </script>
+          
+              
+        
+</body>
+</html>

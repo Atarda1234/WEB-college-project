@@ -1,0 +1,51 @@
+ .menu{
+    height: 90%;
+    overflow: scroll;
+} 
+.aside{
+    float: right;
+    width: 28%;
+    height: 75%;
+    margin-top: 5%;
+}
+body{
+     height: 100%;
+}
+
+#headline{
+    width: 50%;
+}
+
+.stop{
+    clear: both;
+}
+
+#headline{
+    text-align: center;
+}
+
+.main{
+    width: 68%;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+    height: 75%;
+}
+.button2{
+    width: 80%;
+    height: 12%;
+    background-color: rgb(226, 149, 175);
+    border-radius: 8px;
+    border-color: none;
+    margin-bottom: 3% ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.footer{
+    float:left;
+    width: 100%;
+}
+
+

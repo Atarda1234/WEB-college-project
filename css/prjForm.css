@@ -1,0 +1,22 @@
+
+
+.left{
+    padding:2% ;
+}
+
+.lbl{
+    width: 90%;
+    font-weight: lighter;
+   
+}
+
+.lbl2{
+    width: 25%;
+   
+}
+.input{
+ width: 15%;
+}
+body{
+    height:100%;
+}
